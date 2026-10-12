@@ -1,0 +1,93 @@
+review_id,date,rating,title,text,app_version
+R001,2026-07-20,2,"Exit load surprise","Redeemed my mutual fund after 8 months and they deducted some amount. Nobody told me about exit load. Feels like a hidden charge.",5.7.2
+R002,2026-07-21,4,"Good app","The chat assistant answered my query about step-up SIP quickly. Nice to have help inside the app.",5.7.2
+R003,2026-07-22,3,"App hangs at market open","App freezes for a minute right at 9:15 during market open. Order got delayed and I missed my price.",5.7.2
+R004,2026-07-23,1,"Why was money deducted?","I switched from one fund to another within 30 days and got charged. Switchout also attracts exit load? No one explains this before you click redeem.",5.7.2
+R005,2026-07-23,5,"Love the SIP reminders","I get reminders before each SIP instalment. Very easy to track my SIPs now.",5.7.2
+R006,2026-07-24,2,"AMC charge confusion","I see a demat AMC charge deduction of 75 rupees every year. I thought it would be zero. Where was this disclosed?",5.7.2
+R007,2026-07-25,3,"KYC video call failed","Video KYC kept failing yesterday, screen froze mid-call. Took 3 attempts to complete.",5.7.3
+R008,2026-07-27,1,"Exit load charged on 11th month","Held a fund for 11 months and exited. They took 0.5% exit load. This should be shown when I place the redemption order itself.",5.7.3
+R009,2026-07-28,4,"Clean interface","Mutual fund dashboard looks clean now. Redeem button is easier to find.",5.7.3
+R010,2026-07-29,2,"Stamp duty everywhere","Every buy order shows a tiny stamp duty line item. I know it's small but why is it there? Is this a new tax?",5.7.3
+R011,2026-07-30,3,"Position stuck after app crash","App crashed while placing a sell order. On reopening the position was still showing. This is scary during intraday.",5.7.3
+R012,2026-07-31,1,"Cheated on redemption","They deducted exit load without any popup explanation and the support bot just links a help article. Very disappointing.",5.7.3
+R013,2026-08-01,5,"Best for beginners","Started investing through the chat assistant. It explained AMC, STT and brokerage in simple language.",5.7.3
+R014,2026-08-02,2,"DP charges not clear","Charged 15.93 as DP charges on selling shares. I did not see this mentioned anywhere before I sold.",5.7.3
+R015,2026-08-03,4,"Fast customer care","Support resolved my bank update issue within an hour. Good experience.",5.7.3
+R016,2026-08-04,2,"Exit load on SIP units","Each SIP instalment has its own 1-year window for exit load. I thought it was from when I started the SIP. Redemption got hit hard.",5.7.4
+R017,2026-08-05,5,"Mutual fund search improved","Search and fund comparison has improved a lot. Very easy to switch between funds.",5.7.4
+R018,2026-08-06,1,"Hidden charges in beauty","I love the interface but the charges page is buried. I had no idea about exit load until I redeemed and saw less money.",5.7.4
+R019,2026-08-07,3,"Order lag on mobile data","On 4G the order placement takes 8-10 seconds. Works fine on wifi. Data saver mode should not slow trading.",5.7.4
+R020,2026-08-08,2,"AMC waived then charged","First year AMC was free so I never bothered. Now suddenly 75 is debited. At least warn before deducting.",5.7.4
+R021,2026-08-09,1,"Misleading zero broker claim","You advertise zero brokerage for delivery but then there is STT, stamp duty, DP charges. At least show a realistic upfront cost estimate.",5.7.4
+R022,2026-08-10,4,"Good option chain","Options chain is fast on my phone. Great for trading on the go.",5.7.4
+R023,2026-08-11,3,"SIP stop not instant","Stopped a SIP and it still took one more instalment. The chat confirmed it in the end but the delay confused me.",5.7.4
+R024,2026-08-12,1,"Exit load rude surprise","Redeemed 2.5 lakh from a small cap fund at 11th month. Lost almost 2500 in exit load. Nowhere was I told this clearly.",5.7.4
+R025,2026-08-13,5,"Demat account simple","Opening a demat account and KYC was very smooth. Video call took 2 minutes.",5.7.4
+R026,2026-08-14,2,"Redemption amount mismatch","Redeemed an equity fund and the credited amount was less than what NAV suggested. Called support and they said exit load. This needs better transparency.",5.7.4
+R027,2026-08-15,3,"Switch button hidden","Fund switching is hard to find. Took me a while to figure out where the switch option is.",5.7.5
+R028,2026-08-16,2,"Every year a charge","I keep getting charged 75 rupees AMC every year for demat. I know it's small but it was shown as free when I started.",5.7.5
+R029,2026-08-17,1,"Fraud or fee?","I am still not sure if the deduction at redemption was a fee or a fraud. The receipt does not say Exit Load anywhere. Fix the receipt.",5.7.5
+R030,2026-08-18,4,"Notifications on time","SIP success and failed notifications come instantly now. Useful.",5.7.5
+R031,2026-08-19,3,"Search takes time","Fund search is slow when there is strong volatility. Lags behind the market a lot.",5.7.5
+R032,2026-08-20,2,"Exit load not shown on order","When I place a redeem order there is no mention of exit load. Only after processing do I see the deduction. Why not show it upfront?",5.7.5
+R033,2026-08-21,1,"Feels like a hidden fee","Charging exit load on month 12 redemptions is basically a hidden fee. At least show a warning box before I confirm.",5.7.5
+R034,2026-08-22,5,"Chat solves my doubts","The in-app chat is great. It explained brokerage and DP charges to me line by line.",5.7.5
+R035,2026-08-23,3,"Bank verification slow","Adding a new bank account took 2 days for the micro deposit verification. Could be faster.",5.7.5
+R036,2026-08-24,2,"AMC email surprise","Got an email about AMC deduction without any prior warning in the app. These auto-debits should be told in advance.",5.7.5
+R037,2026-08-25,4,"Fast IPO allotment updates","IPO allotment and refund updates were timely. Good experience.",5.7.5
+R038,2026-08-26,1,"Stopped trusting","Repeated deductions I could not understand. Exit load, AMC, DP charges all different. I stopped trusting the app.",5.7.5
+R039,2026-08-27,3,"Laggy charts","Charts freeze on 1 minute timeframe during heavy volume. Very laggy.",5.7.5
+R040,2026-08-28,4,"Good for long term","Simple way to build a monthly SIP. I use the chat to pick funds based on my risk.",5.7.5
+R041,2026-08-29,2,"Exit load explanation patchy","The explainer says exit load depends on holding period but does not say the exact % for my fund. I had to check the scheme document.",5.7.6
+R042,2026-08-30,1,"Wrong redemption amount","Redeemed and got less money than the amount shown on screen. Exit load was not shown during the flow. Please fix.",5.7.6
+R043,2026-08-31,5,"Transparency improved","Now the redeem screen shows an approximate exit load before confirming. Much better than before.",5.7.6
+R044,2026-09-01,3,"AMC vs brokerage","The app mixes up AMC charges and brokerage in one page. Hard to know what is charged when.",5.7.6
+R045,2026-09-02,4,"Support ticket works","Raised a ticket through the app and got a detailed reply about exit load on SIP. Good follow-up.",5.7.6
+R046,2026-09-03,2,"SIP pause feature needed","There is no easy way to skip one SIP instalment. Asked chat and it said pause is not available for all funds.",5.7.6
+R047,2026-09-04,1,"Never mentioned exit load","When I started the SIP nobody ever mentioned exit load could apply to each instalment. Now I know why my redemption was less.",5.7.6
+R048,2026-09-05,3,"Trade book slow","Trade book takes time to load after a high volume day. Waiting for entries is annoying.",5.7.6
+R049,2026-09-06,4,"MF switch easy now","Switching between funds is easier now with clear confirmation.",5.7.6
+R050,2026-09-07,2,"DP charge surprise again","I sell shares rarely and each time I forget the DP charge. Wish the app reminded me of charges before confirming the sell.",5.7.6
+R051,2026-09-08,1,"Receipt unclear","My redemption receipt just shows net amount. No break-up of exit load. I want to see gross, load, and net clearly.",5.7.6
+R052,2026-09-09,5,"Transparent now","I can see DP charge estimate before selling. This is how it should be.",5.7.6
+R053,2026-09-10,3,"Chart indicator missing","Missing RSI on the default mobile charts. Need more indicators quickly.",5.7.6
+R054,2026-09-11,2,"Exit load per SIP instalment","My SIP has completed 14 months but some instalments are recent, and exit load applies per instalment. The app shows total holding 14 months and misleads me.",5.7.6
+R055,2026-09-12,4,"App fast after update","The new update feels snappier. Order placement on market open is better now.",5.7.7
+R056,2026-09-13,1,"Charged twice","I redeemed once and saw two deductions - exit load and some tax. The app never told me. Unacceptable.",5.7.7
+R057,2026-09-14,3,"Portfolio sync delay","Portfolio NAV updates are late sometimes. It shows yesterday NAV for a long time.",5.7.7
+R058,2026-09-15,2,"AMC charge without notice","Auto-debited AMC charge with no in-app notification beforehand. Surprised on bank statement.",5.7.7
+R059,2026-09-16,5,"Great support chat","Chat agent explained exit load and STT in plain words. Wish this was visible before placing the order too.",5.7.7
+R060,2026-09-17,4,"Good app overall","Minor issues but overall very good investing app for mutual funds and stocks.",5.7.7
+R061,2026-09-18,2,"Redemption flow hides fee","The redeem flow shows price and units but not the exit load. I only discover it after the units are debited.",5.7.7
+R062,2026-09-19,1,"Nothing about exit load at purchase","At purchase the scheme page shows exit load in tiny text. New investors like me miss it completely.",5.7.7
+R063,2026-09-20,3,"Watchlist syncing bug","Watchlist does not sync between phone and web sometimes.",5.7.7
+R064,2026-09-21,2,"Explain AMC better","I understand AMC now but only after calling support. App should explain it in the charges section itself.",5.7.7
+R065,2026-09-22,4,"Smooth onboarding","New KYC flow with video is much faster. Completed in a few minutes.",5.7.7
+R066,2026-09-23,3,"Fund filter too basic","Filtering funds by exit load and expense ratio should be easier. Need better filters.",5.7.7
+R067,2026-09-24,1,"Lost money to exit load","Redeemed earned money after 10 months and lost 1.5% to exit load. Never clearly told. Very unhappy.",5.7.7
+R068,2026-09-25,5,"Intraday fast exit works","Fast exit worked beautifully during crash. Filled instantly.",5.7.7
+R069,2026-09-26,2,"Stamp duty confusion","Small stamp duty on every order confuses my statement. Hard to reconcile total charges of the day.",5.7.7
+R070,2026-09-27,3,"Tip during peak hours","App gets slow during peak lunch hours. Watch pages refresh slowly.",5.7.8
+R071,2026-09-28,4,"MF comparison improved","Comparing two funds now shows exit load and expense ratio side by side. Useful.",5.7.8
+R072,2026-09-29,2,"Exit load calculator missing","Please add an exit load calculator in the app. Users should see the impact before redeeming.",5.7.8
+R073,2026-09-30,1,"Support bot unhelpful for fees","Asked the bot why I was charged exit load and it just pasted a generic article. Need a personalized answer based on my fund.",5.7.8
+R074,2026-10-01,4,"Good","No complaints. App works fine for my needs.",5.7.8
+R075,2026-10-02,2,"AMC auto debit shocks","AMC auto debit without prior app alert is a shock. At least show a countdown before the charge date.",5.7.8
+R076,2026-10-03,1,"Exit load felt like theft","I did not understand why my redemption amount was less. Felt like theft until support explained it is exit load. Show it while placing order!",5.7.8
+R077,2026-10-04,3,"SIP name change request","Would like custom names for SIPs to track different goals.",5.7.8
+R078,2026-10-05,4,"DP charge estimate shown","Now the app shows DP charge estimate before selling. Good transparency improvement.",5.7.8
+R079,2026-10-06,2,"Receipt still unclear for fees","The redemption receipt does not split exit load clearly. Net amount only. Please add a charge line.",5.7.8
+R080,2026-10-07,3,"Slight lag in holdings","Holdings page lags when the market is very volatile. Refresh takes 3-4 seconds.",5.7.8
+R081,2026-10-08,2,"Exit load disclosure weak","Disclosure exists but is buried in scheme documents. Should be a one-line upfront note on the redeem button.",5.7.8
+R082,2026-10-08,5,"Best app for MF investors","I moved all my MF investments here. Clear tracking and low friction.",5.7.8
+R083,2026-10-09,3,"Compounding calculator","Would love a fee impact calculator for redemption to plan exits better.",5.7.8
+R084,2026-10-09,1,"Told nothing about load","Was told nothing about exit load at the time of either investment or redemption. Found out only from my bank statement.",5.7.8
+R085,2026-10-10,4,"Good for options","Options trading works smoothly. Execution is fast enough.",5.7.8
+R086,2026-10-10,2,"AMC + DP on one screen confusing","AMC and DP charges shown together confuse me. I could not tell which one was deducted.",5.7.8
+R087,2026-10-10,1,"Exit load after 11 months again","11 months and 20 days holding, still charged exit load because it counts from each SIP instalment. This is frustrating and not explained.",5.7.8
+R088,2026-10-11,3,"Fine but fees page hidden","The fees page exists but is too hidden. Most users discover fees after being charged.",5.7.8
+R089,2026-10-11,5,"Great improvements","Redemption screen improvements and chat support are both great this month.",5.7.8
+R090,2026-10-11,2,"Repeat exit load confusion","Every month someone asks about exit load on Support. Please make it a prominent and simple explainer inside the redeem flow.",5.7.8
+R091,2026-10-11,5,"Works well now","No issues so far. Everything I need for my monthly SIPs works.",5.7.8
+R092,2026-10-11,1,"Deducted without asking","Money deducted on redemption without my understanding. I only learned about exit load after contacting support. Needs upfront clarity.",5.7.8

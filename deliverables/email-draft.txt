@@ -1,0 +1,37 @@
+To: support-leads@growwchat.dev
+Subject: Weekly Product Pulse + Customer Clarification — 21 Jul – 11 Oct, 2026
+Draft: true (no auto-send)
+
+Hi team,
+
+Here is this week's product pulse and a ready-to-use customer clarification for the recurring fee question.
+
+--- WEEKLY PRODUCT PULSE ---
+## Weekly Product Pulse — 21 Jul – 11 Oct, 2026
+
+**Key observation**: Users are repeatedly surprised by undisclosed exit load charges during redemption.
+
+**Top themes**
+- Exit Load Transparency: Lack of upfront disclosure leads to surprise charges and trust issues.
+- Fee Structure Clarity: AMC, DP, and other fees are mixed, causing confusion.
+- Mutual Fund & SIP Usability: Need better fund filtering, comparison tools, and SIP customization.
+
+**What users are saying**
+> "Every month someone asks about exit load on Support. Please make it a prominent and simple explainer inside the redeem flow."
+> "Money deducted on redemption without my understanding. I only learned about exit load after contacting support. Needs upfront clarity."
+
+**Action ideas for the product team**
+1. Insert a concise exit‑load banner showing exact percentages and SIP‑instalment logic in the redemption flow.
+2. Add a pre‑transaction fee breakdown tooltip that separates AMC, DP, Stamp Duty, and Brokerage, with auto‑debit notifications.
+3. Enhance the mutual‑fund list with advanced filtering, side‑by‑side comparison, and SIP controls (naming, pause, edit).
+
+_Generated 2026-10-12 06:48 UTC · llm clustering · 91 reviews in window_
+
+--- FEE EXPLAINER (reusable support snippet) ---
+Exit load is a fee charged when redeeming units of a mutual fund before the minimum holding period specified by the fund house.
+The fee is calculated on the value of the units redeemed and is deducted automatically at the time of redemption.
+The holding period is counted from the date of each individual SIP installment, so a partial period can trigger the exit load even if the overall investment is longer.
+Sources: Groww Help — What are the charges applicable for redeeming? (https://groww.in/help/mutual-funds/order/what-are-the-charges-applicable-for-redeeming--53) | SEBI Investor — Exit Load (https://investor.sebi.gov.in/exit_load.html)
+
+Draft only — no auto-send. Review and send when ready.
+

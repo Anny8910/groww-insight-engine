@@ -1,0 +1,55 @@
+{
+  "product": "Groww Chat",
+  "product_type": "AI chat-based investing assistant for a Groww-style platform",
+  "identified_fee_issue": "Exit load",
+  "sources": [
+    {
+      "id": "groww-redeem-charges",
+      "title": "Groww Help — What are the charges applicable for redeeming?",
+      "url": "https://groww.in/help/mutual-funds/order/what-are-the-charges-applicable-for-redeeming--53",
+      "domain": "groww.in",
+      "type": "Official product help centre",
+      "verified": "2026-10-12"
+    },
+    {
+      "id": "groww-exit-load-blog",
+      "title": "Groww — Exit Load in Mutual Funds: Types and How to Calculate",
+      "url": "https://groww.in/p/exit-load-in-mutual-funds",
+      "domain": "groww.in",
+      "type": "Official product education",
+      "verified": "2026-10-12"
+    },
+    {
+      "id": "sebi-exit-load",
+      "title": "SEBI Investor — Exit Load",
+      "url": "https://investor.sebi.gov.in/exit_load.html",
+      "domain": "investor.sebi.gov.in",
+      "type": "Regulator (SEBI) investor education",
+      "verified": "2026-10-12"
+    },
+    {
+      "id": "amfi-loads",
+      "title": "AMFI — Mutual Funds Sahi Hai: What are loads?",
+      "url": "https://www.mutualfundssahihai.com/en/what-are-loads",
+      "domain": "mutualfundssahihai.com",
+      "type": "Industry body (AMFI) investor education",
+      "verified": "2026-10-12"
+    },
+    {
+      "id": "groww-redeem-anytime",
+      "title": "Groww Help — Can I withdraw/redeem my investments any time?",
+      "url": "https://groww.in/help/mutual-funds/order/can-i-withdraw-redeem-my-investments-any-time",
+      "domain": "groww.in",
+      "type": "Official product help centre",
+      "verified": "2026-10-12"
+    },
+    {
+      "id": "groww-help",
+      "title": "Groww Help & Support",
+      "url": "https://groww.in/help",
+      "domain": "groww.in",
+      "type": "Official product help centre",
+      "verified": "2026-10-12"
+    }
+  ]
+}
