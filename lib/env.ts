@@ -1,15 +1,27 @@
 import { createHash, createHmac, randomUUID } from "node:crypto";
 import path from "node:path";
 import fs from "node:fs";
+import os from "node:os";
 
 export const ROOT_DIR = process.cwd();
+
+const ON_SERVERLESS = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
 
 export const DEFAULT_REVIEWS_CSV =
   process.env.REVIEWS_CSV || path.join(ROOT_DIR, "data", "reviews.csv");
 
 export const SOURCES_PATH = path.join(ROOT_DIR, "data", "sources.json");
 
-export const GENERATED_DIR = path.join(ROOT_DIR, "data", "generated");
+/**
+ * Runtime writes (notes log, email drafts, pending decisions, rejections) must land in a
+ * writable directory. On serverless hosts the project dir is read-only, so fall back to the
+ * OS temp dir. Override with GROWW_DATA_DIR for a persistent volume.
+ */
+export const GENERATED_DIR =
+  process.env.GROWW_DATA_DIR ||
+  (ON_SERVERLESS
+    ? path.join(os.tmpdir(), "groww-insight-engine")
+    : path.join(ROOT_DIR, "data", "generated"));
 export const PENDING_DIR = path.join(GENERATED_DIR, "pending");
 export const NOTES_JSONL = path.join(GENERATED_DIR, "review-insights-notes.jsonl");
 export const NOTES_MD = path.join(GENERATED_DIR, "product-notes.md");

@@ -45,6 +45,11 @@ export default function InsightDashboard() {
   const [csvName, setCsvName] = useState("data/reviews.csv (default)");
   const [file, setFile] = useState<File | null>(null);
   const [state, setState] = useState<StateShape>({ notes: [], emailDrafts: [], rejections: [] });
+  const [sessionNotes, setSessionNotes] = useState<NotesEntry[]>([]);
+  const [sessionDrafts, setSessionDrafts] = useState<EmailDraftShape[]>([]);
+  const [sessionRejections, setSessionRejections] = useState<
+    Array<{ decisionId: string; approvedBy: string; rejectedAt: string }>
+  >([]);
   const [tab, setTab] = useState<"notes" | "email" | "rejections">("notes");
 
   const refreshState = useCallback(async () => {
@@ -96,11 +101,24 @@ export default function InsightDashboard() {
       const res = await fetch("/api/approve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ decisionId: working.decisionId, decision, approvedBy }),
+        body: JSON.stringify({ decisionId: working.decisionId, decision, approvedBy, pending: working }),
       });
-      const json = (await res.json()) as Record<string, unknown>;
+      const json = (await res.json()) as Record<string, any>;
       if (!res.ok) throw new Error((json as { error?: string }).error ?? res.statusText);
       setDecisionResult(json);
+      if (json.status === "approved") {
+        if (json.notesEntry) setSessionNotes((p) => [...p, json.notesEntry as NotesEntry]);
+        if (json.emailDraft) setSessionDrafts((p) => [...p, json.emailDraft as EmailDraftShape]);
+      } else if (json.status === "rejected") {
+        setSessionRejections((p) => [
+          ...p,
+          {
+            decisionId: working.decisionId,
+            approvedBy,
+            rejectedAt: String(json.rejectedAt ?? new Date().toISOString()),
+          },
+        ]);
+      }
       setPhase(json.status === "rejected" ? "rejected" : "done");
       await refreshState();
     } catch (err) {
@@ -109,9 +127,34 @@ export default function InsightDashboard() {
     }
   };
 
-  const notes = state.notes;
-  const emailDrafts = state.emailDrafts;
-  const rejections = state.rejections;
+  // Merge the in-session results with any server-persisted state (best-effort on serverless).
+  const notes = useMemo(() => {
+    const seen = new Set<string>();
+    return [...sessionNotes, ...state.notes].filter((n) => {
+      const key = n.decisionId ?? n.appendedAt ?? JSON.stringify(n).slice(0, 48);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }, [sessionNotes, state.notes]);
+
+  const emailDrafts = useMemo(() => {
+    const seen = new Set<string>();
+    return [...sessionDrafts, ...state.emailDrafts].filter((d) => {
+      if (seen.has(d.filename)) return false;
+      seen.add(d.filename);
+      return true;
+    });
+  }, [sessionDrafts, state.emailDrafts]);
+
+  const rejections = useMemo(() => {
+    const seen = new Set<string>();
+    return [...sessionRejections, ...state.rejections].filter((r) => {
+      if (seen.has(r.decisionId)) return false;
+      seen.add(r.decisionId);
+      return true;
+    });
+  }, [sessionRejections, state.rejections]);
 
   const latestNotesCount = notes.length;
 
@@ -316,10 +359,10 @@ export default function InsightDashboard() {
                 />
               </label>
               <span className="spacer" />
-              <button className="btn danger" disabled={phase === "approving"} onClick={() => decide("reject")}>
+              <button className="btn danger" disabled={phase === "approving" || phase === "done" || phase === "rejected"} onClick={() => decide("reject")}>
                 Reject (write nothing)
               </button>
-              <button className="btn primary" disabled={phase === "approving"} onClick={() => decide("approve")}>
+              <button className="btn primary" disabled={phase === "approving" || phase === "done" || phase === "rejected"} onClick={() => decide("approve")}>
                 {phase === "approving" ? "Calling MCP…" : "Approve & log to Notes + draft email"}
               </button>
             </div>

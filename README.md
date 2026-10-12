@@ -1,5 +1,7 @@
 # GrowwChat — Review Insight Engine
 
+**Live demo (Vercel):** https://groww-insight-engine.vercel.app
+
 Turns raw customer reviews for **GrowwChat** (a Groww-style investing assistant) into a
 weekly product pulse plus a neutral customer-facing fee explainer, then logs the result to
 an internal **Notes** document and creates a support/release **email draft** — but only
@@ -97,6 +99,20 @@ clear prior explanation. 34 reviews in the window reference it (e.g. *"Money ded
 redemption without my understanding. I only learned about exit load after contacting
 support."*). The engine drafts the pulse around this and produces a grounded, neutral
 explainer for support to reuse.
+
+## Deployment
+
+Deployed on **Vercel** (Hobby/free) at <https://groww-insight-engine.vercel.app>.
+Required environment variables are set in the Vercel project: `GROQ_API_KEY`,
+`APPROVAL_SECRET`, `GROQ_MODEL`, `GROQ_BASE_URL`.
+
+Serverless notes:
+- The host filesystem is read-only, so runtime writes (Notes log, email drafts, pending
+  decisions) go to `os.tmpdir()` (see `GENERATED_DIR` in `lib/env.ts`). Set `GROWW_DATA_DIR`
+  to a persistent volume for durable storage.
+- Because `/tmp` is per-instance and ephemeral, the analyze output is carried back to the
+  client and forwarded to `/api/approve`; the approval response returns the created Notes
+  entry and email draft, which the UI shows in-session. The MCP approval gate is unchanged.
 
 ## Project layout
 
